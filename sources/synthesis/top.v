@@ -93,7 +93,7 @@ module top # () (
     // =========================================================================
     
     // Simple count process.
-    always @ (posedge(wSysClk)) begin
+    always @ (posedge(sysClk)) begin
         rCount <= rCount + 1;
     end
 

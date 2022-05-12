@@ -26,7 +26,7 @@
 
 ## External reset signal.
 #set_property -dict { PACKAGE_PIN M17   IOSTANDARD LVCMOS33 } [get_ports { ck_ioa }]; #IO_L10N_T1_D15_14 Sch=ck_ioa
-set_property -dict { PACKAGE_PIN C2    IOSTANDARD LVCMOS33 } [get_ports { sysRst }]; #IO_L16P_T2_35 Sch=ck_rst
+set_property -dict { PACKAGE_PIN C2    IOSTANDARD LVCMOS33 } [get_ports { sysRstb }]; #IO_L16P_T2_35 Sch=ck_rst
 
 ## Clock signal
 set_property -dict {PACKAGE_PIN E3 IOSTANDARD LVCMOS33} [get_ports sysClk]
@@ -105,8 +105,8 @@ set_property -dict {PACKAGE_PIN B8 IOSTANDARD LVCMOS33} [get_ports {btn[3]}]
 #set_property -dict { PACKAGE_PIN G2    IOSTANDARD LVCMOS33 } [get_ports { jd[7] }]; #IO_L15N_T2_DQS_35 Sch=jd[10]
 
 ## USB-UART Interface
-set_property -dict {PACKAGE_PIN D10 IOSTANDARD LVCMOS33} [get_ports UART_Tx]
-set_property -dict {PACKAGE_PIN A9 IOSTANDARD LVCMOS33} [get_ports UART_Rx]
+#set_property -dict {PACKAGE_PIN D10 IOSTANDARD LVCMOS33} [get_ports UART_Tx]
+#set_property -dict {PACKAGE_PIN A9 IOSTANDARD LVCMOS33} [get_ports UART_Rx]
 
 ## ChipKit Outer Digital Header
 #set_property -dict { PACKAGE_PIN V15   IOSTANDARD LVCMOS33 } [get_ports { ck_io0  }]; #IO_L16P_T2_CSI_B_14 Sch=ck_io[0]
